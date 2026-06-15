@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Interactive Piano</title>
+		<link rel="stylesheet" href="../static/main/css/header.css">
+		<link rel="stylesheet" href="../static/main/css/navbar.css">
+		<link rel="stylesheet" href="../static/main/css/main.css">
+		<link rel="stylesheet" href="../static/main/css/footer.css">
+		<link rel="stylesheet" href="../static/piano/css/piano.css">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+	</head>
+	<body>
+		<!-- Header contains header of webpage that is a photo -->
+		<header>
+			<div class="header-photo"></div>
+		</header>
+		<!-- Navigation bar has title and hyperlinks -->
+		<nav>
+			<input type="checkbox" id="menu-control"/>
+			<div class="container">
+				<a class="title">CSE 477 - Homework 1</a>
+				<div class="links">
+					<ul>
+						<li><a href="home.html">Home</a></li>
+						<li><a href="projects.html">Projects</a></li>
+						<li><a href="../static/main/files/Resume-kueber.pdf">Resume</a></li>
+					</ul>
+				</div>
+				<a href="https://www.linkedin.com/in/ileana-kueber/">
+							<img src="../static/main/images/social-linkedin.png"
+							alt= "Linked-in icon"
+							id= "linkedin-img"
+							loading="lazy"></a>
+			<!-- menu icon -->
+			<label id="menu" for="menu-control">
+				<img src="../static/main/images/menu-bar.png" 
+					alt="Menu icon" 
+					loading="lazy">
+			</label>
+			</div>
+			<!-- menu avaliable when screen is less than 650 px-->
+			<div class="menu-mobile">
+				<ul>
+					<li><a href="home.html">Home</a></li>
+					<li><a href="projects.html">Projects</a></li>
+					<li><a href="../static/main/files/Resume-kueber.pdf">Resume</a></li>
+					<li><a href="https://www.linkedin.com/in/ileana-kueber/">LinkedIn</a></li>
+				</ul>	
+			</div>
+		</nav>
+		<!-- Main contains a an interactive piano-->
+		<main>
+			<div class="container">
+				<div class="short-desc">
+					<p><em>Behold piano great and old, its master slumbers in far off cold. If you wish to seek anew, call out to it - we see you.</em></p>
+					<hr></hr>
+				</div>
+				<div class="piano-container">
+					<!-- There are 10 white keys that make up the piano-->
+					<div class="piano-white-keys">
+						<div class="piano-key-white" id="key-a"></div>
+						<div class="piano-key-white" id="key-s"></div>
+						<div class="piano-key-white" id="key-d"></div>
+						<div class="piano-key-white" id="key-f"></div>
+						<div class="piano-key-white" id="key-g"></div>
+						<div class="piano-key-white" id="key-h"></div>
+						<div class="piano-key-white" id="key-j"></div>
+						<div class="piano-key-white" id="key-k"></div>
+						<div class="piano-key-white" id="key-l"></div>
+						<div class="piano-key-white" id="key-;"></div>
+					</div>
+					<!-- There are 7 black keys that make up the piano-->
+					<div class="piano-black-keys">
+						<div class="piano-key-black" id="key-w"></div>
+						<div class="piano-key-black" id="key-e"></div>
+						<div class="piano-key-transparent"></div>
+						<div class="piano-key-black" id="key-t"></div>
+						<div class="piano-key-black" id="key-y"></div>
+						<div class="piano-key-black" id="key-u"></div>
+						<div class="piano-key-transparent"></div>
+						<div class="piano-key-black" id="key-o"></div>
+						<div class="piano-key-black" id="key-p"></div>
+					</div>
+					<!-- Letters displayed over white keys -->
+					<div class="piano-white-key-letters">
+						<div class="piano-key-white-letter"><p>A</p></div>
+						<div class="piano-key-white-letter"><p>S</p></div>
+						<div class="piano-key-white-letter"><p>D</p></div>
+						<div class="piano-key-white-letter"><p>F</p></div>
+						<div class="piano-key-white-letter"><p>G</p></div>
+						<div class="piano-key-white-letter"><p>H</p></div>
+						<div class="piano-key-white-letter"><p>J</p></div>
+						<div class="piano-key-white-letter"><p>K</p></div>
+						<div class="piano-key-white-letter"><p>L</p></div>
+						<div class="piano-key-white-letter"><p>;</p></div>
+					</div>
+					<!-- Letters displayed over black keys -->
+					<div class="piano-black-key-letters">
+						<div class="piano-key-black-letter"><p>W</p></div>
+						<div class="piano-key-black-letter"><p>E</p></div>
+						<div class="piano-key-transparent"></div>
+						<div class="piano-key-black-letter"><p>T</p></div>
+						<div class="piano-key-black-letter"><p>Y</p></div>
+						<div class="piano-key-black-letter"><p>U</p></div>
+						<div class="piano-key-transparent"></div>
+						<div class="piano-key-black-letter"><p>O</p></div>
+						<div class="piano-key-black-letter"><p>P</p></div>
+					</div>
+					<div class="piano"></div>
+					<div class="the-great-old-one"></div>
+					<div class="piano-text" id="piano-title"><p>The Great Old One</p></div>
+				</div>
+			</div>
+		</main>
+		<!-- footer is the box at the bottom of the screen that contains copyright information-->
+		<footer>
+			<div class="box">
+				<p>© 2023 Ileana I. Kueber</p>
+			</div>
+		</footer>
+	</body>
+	<script src="../static/piano/js/piano.js"></script>
+</html>
